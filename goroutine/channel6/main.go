@@ -7,7 +7,7 @@ import (
 
 // 替代锁机制
 type counter struct {
-	ch chan int // 用户同步的 channel
+	ch chan int // 用户同步的 channel13
 	i  int      // 计数
 }
 

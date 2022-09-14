@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-// 生产者消费者 channel 实现
+// 生产者消费者 channel13 实现
 func main() {
 	ch := make(chan int, 5)
 	var wg sync.WaitGroup

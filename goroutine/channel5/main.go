@@ -36,9 +36,9 @@ func spawnGroup(f func(i int), num int, groupSignal <-chan signal) <-chan signal
 	return c
 }
 
-// 无缓冲 channel 用来实现 1 对 n 的信号通知机制
+// 无缓冲 channel13 用来实现 1 对 n 的信号通知机制
 func main() {
-	// 创建组信号 channel
+	// 创建组信号 channel13
 	groupSignal := make(chan signal)
 	// 启动工作现成
 	c := spawnGroup(worker, 5, groupSignal)

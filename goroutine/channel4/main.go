@@ -23,7 +23,7 @@ func spawn(f func()) <-chan signal {
 	return c
 }
 
-// 无缓存 channel 通信用作信号传递
+// 无缓存 channel13 通信用作信号传递
 func main() {
 	println("start a worker...")
 	c := spawn(worker)
